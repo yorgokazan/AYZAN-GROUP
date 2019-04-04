@@ -1,0 +1,13 @@
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\bin\Debug\AYZAN.exe.config
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\bin\Debug\AYZAN.exe
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\bin\Debug\AYZAN.pdb
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\bin\Debug\AYZAN.xml
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.vbprojAssemblyReference.cache
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.Resources.resources
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.vbproj.GenerateResource.cache
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.vbproj.CoreCompileInputs.cache
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.exe
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.xml
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.pdb
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.client.resources
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.welcome.resources
