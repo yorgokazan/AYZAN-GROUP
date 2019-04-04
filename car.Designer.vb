@@ -32,6 +32,8 @@ Partial Class car
         Me.CarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CarTableAdapter = New AYZAN.ayzanDataSetTableAdapters.carTableAdapter()
         Me.TableAdapterManager = New AYZAN.ayzanDataSetTableAdapters.TableAdapterManager()
+        Me.ModelTableAdapter = New AYZAN.ayzanDataSetTableAdapters.modelTableAdapter()
+        Me.PriceTableAdapter = New AYZAN.ayzanDataSetTableAdapters.priceTableAdapter()
         Me.Chassis_idTextBox = New System.Windows.Forms.TextBox()
         Me.Car_nameTextBox = New System.Windows.Forms.TextBox()
         Me.Model_idTextBox = New System.Windows.Forms.TextBox()
@@ -46,14 +48,12 @@ Partial Class car
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ModelBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ModelTableAdapter = New AYZAN.ayzanDataSetTableAdapters.modelTableAdapter()
         Me.ModelDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.PriceBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PriceTableAdapter = New AYZAN.ayzanDataSetTableAdapters.priceTableAdapter()
         Me.PriceDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -72,6 +72,56 @@ Partial Class car
         CType(Me.PriceBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PriceDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Chassis_idLabel
+        '
+        Chassis_idLabel.AutoSize = True
+        Chassis_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Chassis_idLabel.Location = New System.Drawing.Point(16, 29)
+        Chassis_idLabel.Name = "Chassis_idLabel"
+        Chassis_idLabel.Size = New System.Drawing.Size(116, 26)
+        Chassis_idLabel.TabIndex = 1
+        Chassis_idLabel.Text = "chassis id:"
+        '
+        'Car_nameLabel
+        '
+        Car_nameLabel.AutoSize = True
+        Car_nameLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Car_nameLabel.Location = New System.Drawing.Point(16, 57)
+        Car_nameLabel.Name = "Car_nameLabel"
+        Car_nameLabel.Size = New System.Drawing.Size(115, 26)
+        Car_nameLabel.TabIndex = 3
+        Car_nameLabel.Text = "car name:"
+        '
+        'Model_idLabel
+        '
+        Model_idLabel.AutoSize = True
+        Model_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Model_idLabel.Location = New System.Drawing.Point(16, 85)
+        Model_idLabel.Name = "Model_idLabel"
+        Model_idLabel.Size = New System.Drawing.Size(108, 26)
+        Model_idLabel.TabIndex = 5
+        Model_idLabel.Text = "model id:"
+        '
+        'ColorLabel
+        '
+        ColorLabel.AutoSize = True
+        ColorLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ColorLabel.Location = New System.Drawing.Point(16, 113)
+        ColorLabel.Name = "ColorLabel"
+        ColorLabel.Size = New System.Drawing.Size(73, 26)
+        ColorLabel.TabIndex = 7
+        ColorLabel.Text = "color:"
+        '
+        'P_idLabel
+        '
+        P_idLabel.AutoSize = True
+        P_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        P_idLabel.Location = New System.Drawing.Point(16, 141)
+        P_idLabel.Name = "P_idLabel"
+        P_idLabel.Size = New System.Drawing.Size(59, 26)
+        P_idLabel.TabIndex = 9
+        P_idLabel.Text = "p id:"
         '
         'AyzanDataSet
         '
@@ -97,15 +147,13 @@ Partial Class car
         Me.TableAdapterManager.rentalTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = AYZAN.ayzanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'Chassis_idLabel
+        'ModelTableAdapter
         '
-        Chassis_idLabel.AutoSize = True
-        Chassis_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Chassis_idLabel.Location = New System.Drawing.Point(16, 29)
-        Chassis_idLabel.Name = "Chassis_idLabel"
-        Chassis_idLabel.Size = New System.Drawing.Size(116, 26)
-        Chassis_idLabel.TabIndex = 1
-        Chassis_idLabel.Text = "chassis id:"
+        Me.ModelTableAdapter.ClearBeforeFill = True
+        '
+        'PriceTableAdapter
+        '
+        Me.PriceTableAdapter.ClearBeforeFill = True
         '
         'Chassis_idTextBox
         '
@@ -115,16 +163,6 @@ Partial Class car
         Me.Chassis_idTextBox.Size = New System.Drawing.Size(321, 22)
         Me.Chassis_idTextBox.TabIndex = 2
         '
-        'Car_nameLabel
-        '
-        Car_nameLabel.AutoSize = True
-        Car_nameLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Car_nameLabel.Location = New System.Drawing.Point(16, 57)
-        Car_nameLabel.Name = "Car_nameLabel"
-        Car_nameLabel.Size = New System.Drawing.Size(115, 26)
-        Car_nameLabel.TabIndex = 3
-        Car_nameLabel.Text = "car name:"
-        '
         'Car_nameTextBox
         '
         Me.Car_nameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CarBindingSource, "car_name", True))
@@ -132,16 +170,6 @@ Partial Class car
         Me.Car_nameTextBox.Name = "Car_nameTextBox"
         Me.Car_nameTextBox.Size = New System.Drawing.Size(321, 22)
         Me.Car_nameTextBox.TabIndex = 4
-        '
-        'Model_idLabel
-        '
-        Model_idLabel.AutoSize = True
-        Model_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Model_idLabel.Location = New System.Drawing.Point(16, 85)
-        Model_idLabel.Name = "Model_idLabel"
-        Model_idLabel.Size = New System.Drawing.Size(108, 26)
-        Model_idLabel.TabIndex = 5
-        Model_idLabel.Text = "model id:"
         '
         'Model_idTextBox
         '
@@ -151,16 +179,6 @@ Partial Class car
         Me.Model_idTextBox.Size = New System.Drawing.Size(321, 22)
         Me.Model_idTextBox.TabIndex = 6
         '
-        'ColorLabel
-        '
-        ColorLabel.AutoSize = True
-        ColorLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ColorLabel.Location = New System.Drawing.Point(16, 113)
-        ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(73, 26)
-        ColorLabel.TabIndex = 7
-        ColorLabel.Text = "color:"
-        '
         'ColorTextBox
         '
         Me.ColorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CarBindingSource, "color", True))
@@ -168,16 +186,6 @@ Partial Class car
         Me.ColorTextBox.Name = "ColorTextBox"
         Me.ColorTextBox.Size = New System.Drawing.Size(321, 22)
         Me.ColorTextBox.TabIndex = 8
-        '
-        'P_idLabel
-        '
-        P_idLabel.AutoSize = True
-        P_idLabel.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        P_idLabel.Location = New System.Drawing.Point(16, 141)
-        P_idLabel.Name = "P_idLabel"
-        P_idLabel.Size = New System.Drawing.Size(59, 26)
-        P_idLabel.TabIndex = 9
-        P_idLabel.Text = "p id:"
         '
         'P_idTextBox
         '
@@ -264,10 +272,6 @@ Partial Class car
         Me.ModelBindingSource.DataMember = "model"
         Me.ModelBindingSource.DataSource = Me.AyzanDataSet
         '
-        'ModelTableAdapter
-        '
-        Me.ModelTableAdapter.ClearBeforeFill = True
-        '
         'ModelDataGridView
         '
         Me.ModelDataGridView.AllowUserToAddRows = False
@@ -317,10 +321,6 @@ Partial Class car
         '
         Me.PriceBindingSource.DataMember = "price"
         Me.PriceBindingSource.DataSource = Me.AyzanDataSet
-        '
-        'PriceTableAdapter
-        '
-        Me.PriceTableAdapter.ClearBeforeFill = True
         '
         'PriceDataGridView
         '
