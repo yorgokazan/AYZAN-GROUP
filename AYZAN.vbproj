@@ -78,6 +78,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ayzanDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="car.Designer.vb">
+      <DependentUpon>car.vb</DependentUpon>
+    </Compile>
+    <Compile Include="car.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="client.Designer.vb">
       <DependentUpon>client.vb</DependentUpon>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="car.resx">
+      <DependentUpon>car.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="client.resx">
       <DependentUpon>client.vb</DependentUpon>
     </EmbeddedResource>

@@ -11,3 +11,4 @@ C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.xml
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.pdb
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.client.resources
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.welcome.resources
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.car.resources
