@@ -118,6 +118,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="rental.Designer.vb">
+      <DependentUpon>rental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rental.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="car.resx">
@@ -137,6 +143,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rental.resx">
+      <DependentUpon>rental.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

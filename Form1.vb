@@ -12,4 +12,9 @@
         car.Show()
 
     End Sub
+
+    Private Sub make_rental_Click(sender As Object, e As EventArgs) Handles make_rental.Click
+        rental.Show()
+
+    End Sub
 End Class

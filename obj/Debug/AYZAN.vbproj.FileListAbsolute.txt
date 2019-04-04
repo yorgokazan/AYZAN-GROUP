@@ -13,3 +13,4 @@ C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.client.resources
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.welcome.resources
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.car.resources
 C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.modelandprice.resources
+C:\Users\Yorgo Kaazan\source\repos\AYZAN\AYZAN\obj\Debug\AYZAN.rental.resources
